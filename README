@@ -1,0 +1,33 @@
+# ling073-uum-keyboard
+This repository contains a Ukrainian-Urum (Cyrillic) keyboard layout for the IBus input method framework. The Urum keyboard that we have developed is a fork of the existing IBus uk-kbd.min, for the Ukraninian language. This layout was created and specified by Sasha Casada ('24) and Alina Vykliuk ('26) (Swarthmore College) for use in SP23 Computational Linguistics instructed by Prof. Johnathan Washington.
+
+![vgy.me](https://i.vgy.me/Bwlp9z.png)
+
+The keyboard layout allows for easy transcription of the Cyrillic orthography of Ukrainian Urum on Linux systems. We may update this later to include other forms of Urum input depending on the specific utility that may/may not be required of this keyboard.
+
+# Justification
+This keyboard is based on the Russian and Ukrainian keyboard layouts due to their similarity to the Urum language. Given the Urum people primarily reside in Southern Ukraine, it is expected that they are familiar with the Russian/Ukrainian keyboard layouts. Moreover, based on Alina's observations, the Ukrainian language is used as a secondary language online by the Urum community. This keyboard design is intended to be universal for Urum, Ukrainian, and Russian.
+
+### Unique Urum Letters
+The unique letters of the Urum language are placed on the first or second (AltGr) layer. The separate letters for ғ and ң are placed in a manner similar to their placement on the Kazakh/Russian keyboard. Umlaut letters such as ӱ, ӧ are also placed on the second layer, as they are used less frequently than their alternatives y and o. Additionally, other special letters that were identified within Urum texts (such as һ and θ) are included in the keyboard design.
+
+### Other Letters
+The Russian letters ы, и, and ъ are left in their original positions on the Russian layout, as they also occur in the Urum language. The Ukrainian letters і, ї, є, ґ, ц (both Russian and Ukrainian), and щ (both Russian and Ukrainian) that do not occur in the Urum language are placed on the second layer in the same positions as they are on the Ukrainian keyboard.
+
+### Note
+It is currently unclear which orthography is dominant among the Crimean Urum people, as the language appears to have two different orthographies - one more similar to Kazakh (with ғ, no ґ) and the other more similar to Ukrainian (with ґ, no ғ). Nonetheless, this keyboard design includes all possible letters that the Urum community might use, taking into consideration that they do not know Crimean Tatar. Based on further research and analysis, minor changes to the keyboard design may be applied in the future.
+
+## Installation
+1. Clone or download the repository from GitHub.
+2. Follow the instructions in the `INSTALL.md` file to install the keyboard layout on your Linux system.
+3. Once installation is complete, the layout can be selected in IBus settings.
+4. In IBus settings, the following set-up should get you access to Alt-Gr layer function: ![vgy.me](https://i.vgy.me/46xosa.png)
+
+## Usage
+The layout can be selected in IBus settings and used for transcribing the orthography of Ukrainian Urum.
+
+### Contributions
+Suggestions for changes or improvements can be submitted as issues or pull requests on GitHub.
+
+### License
+This project is licensed under the MIT license. Refer to the `LICENSE.md` file for more information.

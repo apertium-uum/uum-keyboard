@@ -1,0 +1,165 @@
+;; uum-kbd-min -- Urum input method modified
+;; Copyright (C) 2023/MIT
+;;   Swarthmore College (Computational Linguistics SP23)
+
+;; This file is part of the m17n database; a sub-part of the m17n
+;; library.
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+;;; Input method for Urum by simulating the Urum keyboard.
+;;;
+;;; @image html um-kbd.png "Keyboard Layout"
+;;; @image latex um-kbd.eps "Keyboard Layout" width=\narrowwidth
+
+;; Jan 2023  Modified by Sasha Casada (scasada1 swarthmore edu) from uk-kbd.mim
+
+(input-method t urum-keyboard)
+
+(description
+ "Urum input method simulating the Urum keyboard.
+    1! 2\" 3№ 4; 5% 6: 7? 8*/₴ 9( 0) -_ =+ Һ/´
+     Й  Ң/Ц  У/Ÿ  К  Е/Ё  Н  Г  Ш  Ғ/Щ  З  Х  Ъ/Ї
+      Ф/Θ Ы/І  В  А  П  Р  О/Ö  Л  Д  Ж/Җ  Э/Є \\|
+       Я  Ч  С  М  И  Т  Ь  Б  Ю  .,
+")
+
+(title "urum")
+
+(map
+ (trans
+  
+  ((G-8) "₴")
+  ((G-`) "һ")
+  ((G-~) "һ")
+  ((G-w) "ц")
+  ((G-W) "Ц")
+  ((G-j) "ӧ")
+  ((G-J) "Ӧ")
+  ((G-e) "ӱ")
+  ((G-E) "Ӱ")
+  ((G-a) "θ")
+  ((G-A) "Θ")
+  ((G-;) "җ")
+  ((G-:) "Җ")
+  ((G-S) "І")
+  ((G-s) "і")
+  ((G-\") "Є")
+  ((G-\') "є")
+  ((G-\}) "Ї")
+  ((G-\]) "ї")
+  ((G-\|) "ґ")
+  ((G-\\) "Ґ")
+  ((G-T) "Ё")
+  ((G-t) "ё")
+  ((G-o) "щ")
+  ((G-O) "Щ")
+
+  ("`" ?´)
+  ("q" ?й)
+  ("w" ?ң)
+  ("e" ?у)
+  ("r" ?к)
+  ("t" ?е)
+  ("y" ?н)
+  ("u" ?г)
+  ("i" ?ш)
+  ("o" ?ғ)
+  ("p" ?з)
+  ("[" ?х)
+  ("]" ?ъ)
+  ("a" ?ф)
+  ("s" ?ы)
+  ("d" ?в)
+  ("f" ?а)
+  ("g" ?п)
+  ("h" ?р)
+  ("j" ?о)
+  ("k" ?л)
+  ("l" ?д)
+  (";" ?ж)
+  ("'" ?э)
+  ("\\" ?\\)
+  ("z" ?я)
+  ("x" ?ч)
+  ("c" ?с)
+  ("v" ?м)
+  ("b" ?и)
+  ("n" ?т)
+  ("m" ?ь)
+  ("," ?б)
+  ("." ?ю)
+  ("/" ?.)
+
+  ("!" ?!)
+  ("@" ?\")
+  ("#" ?№)
+  ("$" ?\;)
+  ("%" ?%)
+  ("^" ?:)
+  ("&" ??)
+  ("*" ?*)
+  ("(" ?\()
+  (")" ?\))
+  ("_" ?_)
+  ("+" ?+)
+  ("~" ?~)
+
+  ("Q" ?Й)
+  ("W" ?Ң)
+  ("E" ?У)
+  ("R" ?К)
+  ("T" ?Е)
+  ("Y" ?Н)
+  ("U" ?Г)
+  ("I" ?Ш)
+  ("O" ?Ғ)
+  ("P" ?З)
+  ("{" ?Х)
+  ("}" ?Ъ)
+  ("A" ?Ф)
+  ("S" ?Ы)
+  ("D" ?В)
+  ("F" ?А)
+  ("G" ?П)
+  ("H" ?Р)
+  ("J" ?О)
+  ("K" ?Л)
+  ("L" ?Д)
+  (":" ?Ж)
+  ("\"" ?Э)
+  ("|" ?\|)
+  ("Z" ?Я)
+  ("X" ?Ч)
+  ("C" ?С)
+  ("V" ?М)
+  ("B" ?И)
+  ("N" ?Т)
+  ("M" ?Ь)
+  ("<" ?Б)
+  (">" ?Ю)
+  ("?" ?,)
+ )
+)
+
+(state
+ (init
+  (trans)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:
